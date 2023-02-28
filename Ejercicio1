@@ -1,0 +1,38 @@
+fun main(args: Array<String>) {
+    /*1.Hacer un programa que llene un arreglo de 10 enteros y
+    debera elevar al cuadrado cada elemento del arreglo*/
+
+    val miArreglo: Array<Int> = arrayOf(1,2,3,4,5,6,7,8,9,10)
+    println("numero = $miArreglo[0]")
+
+    miArreglo.forEach{
+        println("Valor: $it")
+    }
+    val square = pow (number = miArreglo[0])
+    println("Cuadrado0: $square")
+    val square1 = pow (number = miArreglo[1])
+    println("Cuadrado1: $square1")
+    val square2 = pow (number = miArreglo[2])
+    println("Cuadrado2: $square2")
+    val square3 = pow (number = miArreglo[3])
+    println("Cuadrado3: $square3")
+    val square4 = pow (number = miArreglo[4])
+    println("Cuadrado4: $square4")
+    val square5 = pow (number = miArreglo[5])
+    println("Cuadrado5: $square5")
+    val square6 = pow (number = miArreglo[6])
+    println("Cuadrado6: $square6")
+    val square7 = pow (number = miArreglo[7])
+    println("Cuadrado7: $square7")
+    val square8 = pow (number = miArreglo[8])
+    println("Cuadrado8: $square8")
+    val square9 = pow (number = miArreglo[9])
+    println("Cuadrado9: $square9")
+}
+fun pow(number: Int, pow: Int = 2):Int{
+    var result: Int = 1
+    for(i in 1..pow){
+        result = result * number
+    }
+    return result
+}
