@@ -1,0 +1,19 @@
+fun main(args: Array<String>) {
+    println("Ingrese la palabra")
+    val Lapalabra  = readln()
+    val vocales="aeiouAEIOU"
+    var vocaleste = 0
+    var contadorVocales = mutableMapOf<Char, Int>()
+
+    for (caracter in Lapalabra){
+        if(caracter in vocales){
+            contadorVocales[caracter] = (contadorVocales[caracter] ?: 0) + 1
+            vocaleste++
+        }
+    }
+    println("La palabra $Lapalabra tiene $vocaleste vocales en total")
+    for ((vocal,contador) in contadorVocales){
+        println("La vocal $vocal aparecen $contador veces")
+    }
+
+}
