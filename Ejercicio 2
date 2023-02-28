@@ -1,0 +1,23 @@
+fun main(args: Array<String>) {
+    /* 2.Hacer un programa que pida un número entre 1 y 9999 y
+    nos diga cuantas unidades de millar, centenas, decenas y unidades tiene
+     */
+    var nn1: Int
+    println("introduce un número que este entre 1 y 9999")
+    print("introduce una cantidad:")
+    nn1 = readLine()?.toInt() as Int
+
+    if(nn1 >=1 && nn1 <= 9999){
+        var unidad: Int = nn1/1
+        var de:Int = nn1/10
+        var ce:Int = nn1/100
+        var mill:Int = nn1/1000
+
+        println("La cantidad en unidad es: $unidad")
+        println("La cantidad en decena es: $de")
+        println("La cantidad en centena es: $ce")
+        println("La cantidad en  millar es: $mill")
+    }else{
+        println("La cantidad que ingreso no esta dentro del rango")
+    }
+}
