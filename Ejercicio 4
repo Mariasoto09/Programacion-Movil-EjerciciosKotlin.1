@@ -1,0 +1,13 @@
+fun main(Args: Array<String>) {
+    //4. Hacer un programa que pida una cadena y nos diga si es palíndromo o no.
+    var (igual, aux) = Pair(0, 0)
+    var tex: String
+    print("Ingrese la palabra que desea evaluar: ")
+    tex = readLine() as String
+    var reverse = tex.reversed()
+    if (tex == reverse) {
+        println("$tex es palindromo!!")
+    } else {
+        println("$tex no es palindromo!!")
+    }
+}
