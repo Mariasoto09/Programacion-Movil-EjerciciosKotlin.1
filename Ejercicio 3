@@ -1,0 +1,18 @@
+fun main() {
+    //3. Hacer un programa que pida un número en decimal y nos devuelva su equivalente en
+    //binario, octal y hexadecimal.
+    println("Ingrese un numero en decimal: ")
+    val n = readLine()!!.toInt()
+
+    val binary: String = Integer.toBinaryString(n)
+
+    println("Equivalente binario: $binary ")        // 1001011
+
+    val octalResult = Integer.toOctalString(n)
+
+    println("Equivalente Octal: $octalResult")
+
+    val hexa: String = Integer.toHexString (n)
+    println("Equivalente Hexadecimal: $hexa")
+
+}
