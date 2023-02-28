@@ -1,0 +1,24 @@
+fun main(args: Array<String>) {
+    /*5.Hacer un programa que pida el valor de los lados de
+    un triángulo y nos diga que tipo de triángulo es.*/
+
+    println("Introduce los tres lados del triagulo:")
+    print("Introduce el primer lado: ")
+    var lad1 = readLine()!!.toInt()
+    print("Introduce el segundo lado: ")
+    var lad2 = readLine()!!.toInt()
+    print("Introduce el tercer lado: ")
+    var lad3 = readLine()!!.toInt()
+
+    if(lad1 == lad2 && lad2 == lad3){
+        println("Es un triángulo equilátero")
+    }else if(lad1 == lad2 && lad2 != lad3){
+        println("Es un triángulo isosceles")
+    }else if(lad1 == lad3 && lad3 != lad2){
+        println("Es un triángulo isosceles")
+    }else if(lad2 == lad3 && lad3 != lad1){
+        println("Es un triángulo isosceles")
+    }else{
+        println("El triángulo es escaleno")
+    }
+}
