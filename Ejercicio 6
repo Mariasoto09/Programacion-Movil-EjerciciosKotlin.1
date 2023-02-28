@@ -1,0 +1,11 @@
+fun main(args: Array<String>) {
+    /*Hacer un programa que mediante funciones permita calcular
+    el factorial de un número.*/
+    print("Ingrese un número: ")
+    var numeroo = readLine()!!.toInt()
+
+    for (i in numeroo-1 downTo 1){
+        numeroo = numeroo * i
+    }
+    print("El factorial es: $numeroo")
+}
